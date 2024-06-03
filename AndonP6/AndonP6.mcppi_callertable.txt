@@ -1,0 +1,22 @@
+main
+	init_mp3
+		UART1_Init
+	mp3_stop
+		calcula_checksum
+		manda_mp3
+			UART1_Write
+	mp3_volumen_x
+		calcula_checksum
+		manda_mp3
+			UART1_Write
+	Button
+		Delay_500us
+	mp3_play_x
+		calcula_checksum
+		manda_mp3
+			UART1_Write
+	mp3_single_repeat
+		calcula_checksum
+		manda_mp3
+			UART1_Write
+interrupt
